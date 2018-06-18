@@ -12,7 +12,7 @@ second Algorithm is Bullbs.
 
 
 
-Discriptions:
+# Discriptions:
 
 FIRST ALGORITHM GREATEST NUMBER
 
