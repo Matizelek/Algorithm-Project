@@ -26,7 +26,7 @@ void GreatestNumber::MenuBox()
 		cout << "Algorithm Greatest Posible number from Input \n";
 		cout << "Choose task: \n";
 		cout << "1. Enter a number \n";
-		cout << "2. See egsamples \n";
+		cout << "2. See egsample \n";
 		cout << "3. Back to Main Menu \n";
 }
 
