@@ -1,7 +1,7 @@
 # Algorithm-Project
 
 
-first Algorithm is Greatest number from imput number.
+first Algorithm is Greatest number from imput number. WITH TEMPLATE
 
 second Algorithm is Bullbs.
 
