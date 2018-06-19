@@ -32,7 +32,7 @@ int main()
 		{
 		case '1':
 		{
-			GreatestNumber init;
+			GreatestNumber<int> init;
 			init.initGreatestNumber();
 			init.~GreatestNumber();
 			break;

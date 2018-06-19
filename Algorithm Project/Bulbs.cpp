@@ -12,6 +12,7 @@ Bulbs::Bulbs()
 	solution = 0;
 	size = 0;
 	first = false;
+	arrayRange = 0;
 }
 
 
@@ -81,13 +82,13 @@ void Bulbs::algorithm( int *A)
 		}
 	}
 	cout << "\nSolution : " << solution << "\n";
+	cin.ignore();
 
 }
 
 int Bulbs::putArray()
 {
 	system("cls");
-	arrayRange = 0;
 	cout << "Put size of the array from 1 to 100: \n";
 	cin >> arrayRange;
 	do {
@@ -105,7 +106,9 @@ int Bulbs::putArray()
 
 		}
 		cout << "\n";
+		cin.clear();
 		cin >> number;
+
 		if(number >= 1 && number <= arrayRange)
 		{
 			A[size] = number;// -48;
