@@ -29,7 +29,7 @@ void Bulbs::MenuBox()
 	cout << "3. Back to Main Menu \n";
 }
 
-void Bulbs::algorithm( int *A)
+void Bulbs::algorithm( vector <int> &A)
 {
 	//A[23] = { 2, 1, 3, 5, 4, 11, 23, 15, 19, 13, 8, 7, 22, 12, 6, 9, 21, 18, 20, 10, 14, 17, 16 }, N = 23;;
 	//int A[9] = { 1, 3, 2, 5, 6, 4, 8, 9, 7 }, N = 9;
@@ -38,13 +38,13 @@ void Bulbs::algorithm( int *A)
 	N = size;
 	size = 0;
 
-	for (int i = 0; i<N; i++)
+	for ( auto i = 0; i != A.size() ; i++ )
 	{
 		if (A[i] == 1)
 		{
 			int a = 0;
 			first = true;
-			for (int j = 0; j <= i; j++)
+			for (auto j = 0; j <= i; j++)
 			{
 				if (((A[a] - 1 == A[j]) && (A[a] != 1)) || (A[a] == 1))
 				{
@@ -88,6 +88,7 @@ void Bulbs::algorithm( int *A)
 
 int Bulbs::putArray()
 {
+	size = 0;
 	system("cls");
 	cout << "Put size of the array from 1 to 100: \n";
 	cin >> arrayRange;
@@ -111,7 +112,8 @@ int Bulbs::putArray()
 
 		if(number >= 1 && number <= arrayRange)
 		{
-			A[size] = number;// -48;
+			cout << "Push back\n";
+			A.push_back(number);
 			size++;
 			continue;
 		}
@@ -146,15 +148,15 @@ int Bulbs::initBulbs()
 			system("cls");
 			cout << "EGSAMPLES:\n";
 			cout << "A[9] = { 1, 3, 2, 5, 6, 4, 8, 9, 7 }\n";
-			int Aeg1[9] = { 1, 3, 2, 5, 6, 4, 8, 9, 7 };
+			vector <int> Aeg1 = { 1, 3, 2, 5, 6, 4, 8, 9, 7 };
 			solution = 0;
 			size = 9;
 			algorithm(Aeg1);
 			cout << "A[23] = { 2, 1, 3, 5, 4, 11, 23, 15, 19, 13, 8, 7, 22, 12, 6, 9, 21, 18, 20, 10, 14, 17, 16}\n";
-			int Aeg2[23] = { 2, 1, 3, 5, 4, 11, 23, 15, 19, 13, 8, 7, 22, 12, 6, 9, 21, 18, 20, 10, 14, 17, 16 };
+			Aeg1 = { 2, 1, 3, 5, 4, 11, 23, 15, 19, 13, 8, 7, 22, 12, 6, 9, 21, 18, 20, 10, 14, 17, 16 };
 			solution = 0;
 			size = 23;
-			algorithm(Aeg2);
+			algorithm(Aeg1);
 			cin.ignore();
 			break;
 		}

@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>;
 
 using namespace std;
 class Bulbs
@@ -7,14 +8,15 @@ class Bulbs
 	int arrayRange;
 	int size, N, number;
 	bool first;
-	int *A = new int [size];
+	vector <int> A;
+	// int *A = new int[size];
 	int solution;
 public:
 	Bulbs();
 	~Bulbs();
 	int initBulbs();
 	void MenuBox();
-	void algorithm(int *A);
+	void algorithm(vector <int> &A);
 	int putArray();
 };
 
