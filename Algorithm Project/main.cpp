@@ -3,6 +3,7 @@
 
 #include"GreatestNumber.h"
 #include "Bulbs.h"
+#include "Bulbs11.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ void initMenuBox()
 	cout << "Choose Algorithm: \n";
 	cout << "1. Greatest Posible Number from Imput Number \n";
 	cout << "2. Bulb light on with specific order \n";
+	cout << "3. Bulb version 2\n";
 	
 	
 	
@@ -42,6 +44,14 @@ int main()
 			Bulbs init;
 			init.initBulbs();
 			init.~Bulbs();
+			break;
+		}
+		case '3':
+		{
+			Bulbs11 init;
+			init.initBulbs();
+			init.~Bulbs11();
+			cin.ignore();
 			break;
 		}
 		default:

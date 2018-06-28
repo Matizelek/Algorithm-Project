@@ -116,11 +116,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bulbs.cpp" />
+    <ClCompile Include="Bulbs11.cpp" />
     <ClCompile Include="GreatestNumber.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bulbs.h" />
+    <ClInclude Include="Bulbs11.h" />
     <ClInclude Include="GreatestNumber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
